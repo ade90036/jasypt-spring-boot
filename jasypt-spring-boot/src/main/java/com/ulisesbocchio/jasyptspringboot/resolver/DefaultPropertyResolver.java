@@ -3,9 +3,8 @@ package com.ulisesbocchio.jasyptspringboot.resolver;
 import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyDetector;
 import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyResolver;
 import com.ulisesbocchio.jasyptspringboot.detector.DefaultPropertyDetector;
+import com.ulisesbocchio.jasyptspringboot.encryptor.StringEncryptor;
 import com.ulisesbocchio.jasyptspringboot.exception.DecryptionException;
-import org.jasypt.encryption.StringEncryptor;
-import org.jasypt.exceptions.EncryptionOperationNotPossibleException;
 import org.springframework.util.Assert;
 
 /**
@@ -33,7 +32,7 @@ public class DefaultPropertyResolver implements EncryptablePropertyResolver {
         if (detector.isEncrypted(value)) {
             try {
                 actualValue = encryptor.decrypt(detector.unwrapEncryptedValue(value.trim()));
-            } catch (EncryptionOperationNotPossibleException e) {
+            } catch (Throwable e) {
                 throw new DecryptionException("Decryption of Properties failed,  make sure encryption/decryption " +
                         "passwords match", e);
             }

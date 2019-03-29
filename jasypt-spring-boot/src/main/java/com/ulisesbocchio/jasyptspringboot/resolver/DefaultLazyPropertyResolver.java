@@ -2,9 +2,9 @@ package com.ulisesbocchio.jasyptspringboot.resolver;
 
 import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyDetector;
 import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyResolver;
+import com.ulisesbocchio.jasyptspringboot.encryptor.StringEncryptor;
 import com.ulisesbocchio.jasyptspringboot.util.Singleton;
 import lombok.extern.slf4j.Slf4j;
-import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.BeanFactory;
 
 import java.util.Optional;

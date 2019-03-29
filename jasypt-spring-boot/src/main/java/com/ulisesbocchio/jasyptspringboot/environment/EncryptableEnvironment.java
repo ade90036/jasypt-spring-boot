@@ -4,8 +4,8 @@ import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyDetector;
 import com.ulisesbocchio.jasyptspringboot.EncryptablePropertyResolver;
 import com.ulisesbocchio.jasyptspringboot.detector.DefaultPropertyDetector;
 import com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor;
+import com.ulisesbocchio.jasyptspringboot.encryptor.StringEncryptor;
 import com.ulisesbocchio.jasyptspringboot.resolver.DefaultPropertyResolver;
-import org.jasypt.encryption.StringEncryptor;
 import org.springframework.core.convert.support.ConfigurableConversionService;
 import org.springframework.core.env.*;
 

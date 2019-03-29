@@ -3,7 +3,6 @@ package com.ulisesbocchio.jasyptspringboot.annotation;
 import com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesConfiguration;
 import com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor;
 import com.ulisesbocchio.jasyptspringboot.wrapper.EncryptablePropertySourceWrapper;
-import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
