@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.ulisesbocchio</groupId>
+        <groupId>com.github.arizzini</groupId>
         <artifactId>jasypt-spring-boot-parent</artifactId>
         <version>2.1.2-SNAPSHOT</version>
     </parent>
